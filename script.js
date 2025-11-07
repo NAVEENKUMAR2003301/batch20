@@ -125,3 +125,217 @@ console.log(100);
 // console.log(userWish);
 
 
+// console method 
+
+// 1. console.log()
+
+console.log(1001);
+
+
+// 2. console.warn()
+
+console.warn(20);
+
+
+// 3. console.error()
+
+console.error(45);
+
+
+// 4. console.clear()
+
+console.clear()
+
+
+// dataTypes
+
+// primitive datatypes
+
+// string
+
+let str = "123"
+
+console.log(typeof(str));
+
+
+// number
+
+let num1 = 123
+
+console.log(typeof(num));
+
+
+// boolean
+
+let boo = false
+
+console.log(typeof(boo));
+
+
+// undefined
+
+let a1;
+
+console.log(a1);
+
+
+// null
+
+// let a2 = prompt()
+
+// console.log(a2);
+
+
+// non primitive datatypes
+
+// array
+
+// []
+
+let arr = ["cherry","apple","banana","orange","guava","pine Apple","strawberry"]
+
+console.log(arr);
+console.log(arr[2]);
+console.log(arr[0]);
+console.log(arr[arr.length-1]);
+
+
+
+// object
+
+// {}
+
+let obj = {
+    redFruit : ["cherry","apple","strawberry"],
+    yellowFruit : ["banana","pine apple"],
+    orangeFruit : "orange"
+}
+
+
+console.log(obj);
+console.log(obj.redFruit[1]);
+console.log(obj.yellowFruit[1]);
+console.log(obj.orangeFruit);
+
+console.clear()
+
+
+// operators
+
+// 1. Arithmetic operator
+
+// meaning            opeators
+
+// addition               +
+
+// subraction             -
+
+// multiplication         *
+
+// division               /
+
+// modulus                %
+
+// exponencial            **
+
+// increament             ++  post  = var ++, pre = ++ var
+
+// decreament             --  post  = var--,
+// pre  = -- var  
+
+
+console.log(1+2);
+console.log(1-2);
+console.log(1*2);
+console.log(1/2);
+console.log(1%2);
+console.log(3**2); // 3^2 = 3*3 =9
+
+
+// increament ++ = 1
+
+let num2 = 10  // 0
+
+num2 = ++num2
+
+console.log(num2);
+
+
+
+
+
+
+
+let num3 = 2   
+
+let num4 = num3++ 
+
+console.log("num3 :",num3);
+console.log("num4 :",num4); 
+
+
+
+
+
+
+
+
+
+
+
+let num5 = 3      
+
+let num6 = ++num5 // ++num5 = 4 
+
+let num7 = --num6 // ++num6 = ++4 = 5
+
+console.log(num5); // num5 : 4
+console.log(num6); // num6 : 5
+console.log(num7); // num7 : 5
+
+
+
+
+
+let num8 = 1      
+
+let num9 = num8-- //  1
+
+let num10 = ++num9  // ++num9 = ++1 = 2
+
+console.log(num8); // num8 = 0
+console.log(num9); // num9 = 2
+console.log(num10);// num 10 = 2
+
+
+// che - 0 2 2
+
+// bha - 0 1 1
+
+// yas - 0 0 1
+
+// ari - 0 0 1
+
+
+
+
+// 2. assignment operator
+
+// 3. relational operator
+
+// 4. logical opeator
+
+
+
+
+
+
+// function
+
+// date
+
+
+
+
+
+
