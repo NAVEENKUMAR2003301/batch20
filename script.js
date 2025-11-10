@@ -317,14 +317,181 @@ console.log(num10);// num 10 = 2
 // ari - 0 0 1
 
 
+console.clear();
 
 
 // 2. assignment operator
 
-// 3. relational operator
+let hello = 5
+let additionVal = 10
+
+hello     += additionVal  // hello = hello + additionVal
+
+hello -= additionVal
+hello *= additionVal
+hello /= additionVal
+hello **= additionVal
+hello %= additionVal
+
+console.log(hello);
+
+
+// 3. relational operator (or) comparision operator
+
+//  meaning       operators       example          result
+
+// lessThen           <             5<3              false
+
+// greaterThen        >             5>5              false
+
+// lessThenEqual      <=            5<=5             true
+
+// greaterThenEq      >=            5>=5             true
+
+// loosyTypeEq        ==            5=="5"           true
+
+// strictlyTypeEq     ===           5==="5"          false
+
+// loosyNotEq          !=            5!="5"          false
+
+// strictlyNotEq       !==          5!=="5"          true
+
+
+
+
+
+// 1
+console.log(10 > 8);  // true
+
+// 2
+console.log(7 <= "7"); // true
+
+// 3
+console.log(4 === "4"); // false
+
+// 4
+console.log(9 != 9); // false
+
+// 5
+console.log(3 !== "3");  // true 
+
+
+
+
+
 
 // 4. logical opeator
 
+// AND         &&      
+
+// true   &&  true  && false = false
+// true   &&  true  && true  = true
+
+
+// OR          ||
+
+// true || true || true = true
+// true || true || false = true
+// false || false || false = false
+
+
+// NOT         !
+
+// !(true) = false
+
+
+
+// 1
+console.log((5 > 3) && (10 == "10") && (2 > 5));
+
+// true  && true  && false = false
+
+// 2
+console.log((7 === 7) && (4 <= 4) && (3 != "3"));
+
+// true && true && false = false
+
+// 3
+console.log((false || true || false));
+
+// true
+
+// 4
+console.log((5 < 2) || (8 === "8") || (9 >= 9));
+
+// false || false || true = true
+
+// 5
+console.log(!(10 > 2));
+
+// false
+
+console.clear();
+
+
+//concatination (+)
+
+
+let one = "hello"
+let one1 = "world"
+
+
+let finalVal = one +" "+ one1
+
+console.log(finalVal);
+
+// template string
+
+
+let totalVal = `${one} ${one1}`
+
+console.log(totalVal);
+
+
+// type conversition
+
+// 1. implicit type conversion
+
+console.log(1+"1");
+
+// string
+
+// string anything string
+
+console.log(typeof("1"+"1"));
+console.log(typeof("1"+1));
+console.log(typeof("1"+true));
+console.log(typeof("1"+null));
+console.log(typeof("1"+undefined));
+console.log(typeof("1"+[1,2]));
+console.log(typeof("1"+{a:1}));
+
+
+// number
+
+console.log(typeof(1+"1"));
+console.log(typeof(1+1));
+console.log((1+true));
+console.log((1+null));
+console.log(typeof(1+undefined));
+console.log(typeof(1+[1,2]));
+console.log(typeof(1+{k:1}));
+
+// boolean
+
+console.log(typeof(true + "1"));
+console.log(typeof(true + 1));
+console.log(typeof(true + true));
+console.log(typeof(true + null));
+console.log(typeof(true + undefined));
+console.log(typeof(true + [1,2]));
+console.log(typeof(true + {k:6}));
+
+
+
+
+
+// 2. explicit type conversion
 
 
 
