@@ -489,9 +489,179 @@ console.log(typeof(true + {k:6}));
 
 
 
+console.clear();
 
 
 // 2. explicit type conversion
+
+// number constractor  (Number)
+
+
+console.log(1 + Number("1"));
+
+console.log(Number());
+console.log(Number(""));
+console.log(Number("123"));
+console.log(Number("abc"));
+console.log(Number(1));
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(undefined));
+console.log(Number(null));
+console.log(Number([1,2]));
+console.log(Number({k:1}));
+
+// Boolean
+
+console.log(Boolean());
+console.log(Boolean(""));
+console.log(Boolean("123"));
+console.log(Boolean("abc"));
+console.log(Boolean(1));
+console.log(Boolean(0));
+console.log(Boolean(true));
+console.log(Boolean(false));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean([1,2]));
+console.log(Boolean({l:1}));
+
+
+// String
+
+console.log(String(1));
+console.log(""+1);
+
+
+
+
+// flow control statement
+
+// conditional statement
+
+// 1. if statement
+
+// condition true = allow 
+
+if(5=="5"){
+    console.log("true val"); 
+}
+
+// 2. if else statement
+
+if(6>=6){
+   console.log("true value111");
+   
+}else{
+  console.log("false value");
+  
+}
+
+// 3. else if statement
+
+let hour = 1000
+
+if(hour >= 1 && hour<=6) {
+    console.log("early morning");
+    
+}else if(hour >= 7 && hour <= 12){
+    console.log("good morning");
+    
+}else if(hour >= 13 && hour <= 17){
+    console.log("good afternoon");
+    
+}else if(hour >= 18 && hour <= 20){
+    console.log("good evening");
+    
+}else{
+    console.log("good night");
+    
+}
+
+// 4. nested if statement
+
+//  let age = prompt("enter your age")
+//  let height = prompt("enter your height")
+//  let weight = prompt("enter your weight")
+
+//  if(age >= 18){
+//     if(height >= 160){
+//         if(weight >= 60){
+//             console.log("congradulations you are selected");
+            
+//         }else{
+//             console.log("your weight is unfit");
+            
+//         }
+//     }else{
+//         console.log("your height is unfit");
+        
+//     }
+//  }else{
+//     console.log("your age is unfit");
+    
+//  }
+
+// 5. switch statement
+
+// switch(){
+//    case value : statement ;break 
+//    case value : statement ;break 
+//    case value : statement ;break 
+//    case value : statement ;break 
+//    case value : statement ;break 
+// }
+
+let trafficLight = "green"
+
+switch(trafficLight){
+   case "red" : console.log("vechile stop");break
+   case "yellow" : console.log("vechile start");break
+   case "green" : console.log("vechile go");break
+   
+}
+// 6. ternary operator
+
+// condition ? statment : statment
+
+let pwd = 1
+
+pwd ? console.log("welcome the home page") : console.log("your password is incorrect");
+
+console.clear();
+
+
+// looping statement
+
+
+
+// for loop
+
+// for(intialiazation; condition ;iteration){
+//     // statement
+// }
+
+for(let a = 1 ; a <= 3 ; a++){
+    console.log(a); //1  2  3
+}
+
+//  a=1 ; 1 <= 3 = true ; 1++ = 2;
+
+//  a=2 ; 2 <= 3 = true ; 2++ = 3;
+
+//  a=3 ; 3 <= 3 = true ; 3++ = 4;
+
+//  a=4 ; 4 <= 3 = false ;
+
+
+// while loop
+
+// do while loop
+
+// for of loop
+
+// for in loop
+
 
 
 
