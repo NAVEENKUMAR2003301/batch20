@@ -1408,26 +1408,110 @@
 // // date
 
 
-let year = prompt("enter you dob year")
-let month = prompt("enter your dob month")
-let date = prompt("enter your dob date")
+// let year = prompt("enter you dob year")
+// let month = prompt("enter your dob month")
+// let date = prompt("enter your dob date")
 
-let dateVal = new Date()
+// let dateVal = new Date()
 
-dateVal.setFullYear(year)
-dateVal.setMonth(month-1)
-dateVal.setDate(date)
+// dateVal.setFullYear(year)
+// dateVal.setMonth(month-1)
+// dateVal.setDate(date)
 
-console.log(dateVal);
+// console.log(dateVal);
 
-let day = dateVal.getDay()
+// let day = dateVal.getDay()
 
-console.log(day);
+// console.log(day);
 
-let dayData = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+// let dayData = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
 
 
-alert(dayData[day]);
+// alert(dayData[day]);
+
+
+
+// asyncrnous
+
+
+
+
+// 1. setTimeout
+
+// setTimeout(()=>{
+
+//     let date = new Date();
+
+//     let time = date.toLocaleTimeString();
+
+//     console.log(time);
+
+// },5000)
+
+// // 2. setInterval
+
+// setInterval(()=>{
+//     let date = new Date();
+
+//     let time = date.toLocaleTimeString();
+
+//     console.log(time);
+// },1000)
+
+
+function one(){
+    console.log("one");
+    
+}
+
+function two(){
+    console.log("two");
+    
+}
+
+function three(){
+    console.log("three");
+    
+}
+
+
+one()
+setTimeout(two,1000)
+three()
+
+
+
+// promise 
+
+// 1. resolve - successful data
+// 2. reject  - error data
+// 3. bending - coming data
+
+// fetch
+
+fetch("https://fakestoreapi.com/products/")
+.then((data)=>{
+    return data.json()  
+})
+
+.then((jsData)=>{
+    console.log(jsData);
+    console.log(jsData.title);
+    jsData.forEach((c,i,t)=>{
+        console.log(c.title);
+        
+    })
+})
+
+.catch((error)=>{
+    console.error(error);
+    
+})
+
+.finally((h)=>{
+ console.log(h);
+ 
+})
 
 
 
