@@ -5,21 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+  .active{
+    animation: leftRight .5s ease;
+    padding: 10px;
+    background-color: aqua;
+  }
+
+  .active:hover{
+    background-color: red;
+    color: white;
+  }
+
+  @keyframes leftRight{
+    0%{
+      transform: translateX(-100px);
+    }
+    100%{
+      transform: translateX(0);
+    }
+  }
+</style>
 <body>
 
-  <h1>javascript</h1>
-  <div class="one">hello class</div>
-  <div id="two">hello Id</div>
+ <input type="text">
+ <button>Add</button>
+ <ol>
+ </ol>
 
-  <h2>js</h2>
-  <div class="one1">js1</div>
-  <div id="two2">js2</div>
-
- <h3>one</h3>
- <h3>one</h3>
- <h3>two</h3>
- <h3>two</h3>
- <h3>two</h3>
+ <!-- node list
+  
+ #text div #text-->
 
     
   <script src="./script.js"></script>
